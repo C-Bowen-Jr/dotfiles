@@ -1,0 +1,11 @@
+#!/bin/sh
+# Display a logout dialog using zenity
+
+zenity --question --text "Logout?" --no-wrap --ok-label "Yes" --cancel-label "No"
+
+rc=$?
+case $rc in
+    0)
+        openbox --exit
+    ;;
+esac
