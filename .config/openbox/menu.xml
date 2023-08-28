@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal" icon="/usr/share/icons/Mint-X/apps/48/bash.png">
+    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+  </item>
+  <item label="Web browser" icon="/usr/share/icons/Mint-X/apps/48/firefox.png">
+    <action name="Execute"><execute>x-www-browser</execute></action>
+  </item>
+  <separator />
+  <item label="ObConf">
+    <action name="Execute"><execute>obconf</execute></action>
+  </item>
+  <item label="Restart Openbox">
+    <action name="Restart" />
+  </item>
+  <separator />
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+</menu>
+
+</openbox_menu>
