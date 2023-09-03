@@ -90,6 +90,19 @@ border_color_hover = #000000 100
 background_color_pressed = #ffffaa 100
 border_color_pressed = #000000 100
 
+# Background 7: System Tray
+rounded = 4
+border_width = 1
+border_sides = TBLR
+border_content_tint_weight = 0
+background_content_tint_weight = 0
+background_color = #eeeeee 30
+border_color = #ffffff 40
+background_color_hover = #ffffff 40
+border_color_hover = #ffffff 60
+background_color_pressed = #555555 4
+border_color_pressed = #eaeaea 44
+
 #-------------------------------------
 # Panel
 panel_items = P:TSBC
@@ -164,10 +177,10 @@ mouse_scroll_down = iconify
 #-------------------------------------
 # System tray (notification area)
 systray_padding = 0 4 2
-systray_background_id = 0
+systray_background_id = 7
 systray_sort = ascending
 systray_icon_size = 24
-systray_icon_asb = 100 0 0
+systray_icon_asb = 100 1 100
 systray_monitor = 1
 systray_name_filter = 
 
@@ -186,8 +199,8 @@ launcher_item_app = /usr/share/applications/mintlocale.desktop
 
 #-------------------------------------
 # Clock
-time1_format = %H:%M
-time2_format = %A %d %B
+time1_format = %I:%M
+time2_format = %a %d %B
 time1_timezone = 
 time2_timezone = 
 clock_font_color = #ffffff 100
