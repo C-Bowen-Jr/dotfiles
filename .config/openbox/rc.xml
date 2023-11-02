@@ -235,10 +235,15 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
-    <keybind key="A-Print">
+    <!-- Super+PrintScrn and Super+Alt+PrintScrn are normal keyboard, this is MacBook mod -->
+    <keybind key="W-XF86LaunchA">
       <action name="Execute">
-        <command>scrot -s</command>
+        <command>gnome-screenshot</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-XF86LaunchA">
+      <action name="Execute">
+        <command>gnome-screenshot -w</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
